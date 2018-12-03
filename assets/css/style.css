@@ -317,24 +317,38 @@ input[type=submit] {
     line-height: 40%;
     text-align: center;
   }
+
+  .main-section {
+    clear: both;
+    float: right;
+  }
+
+  .work {
+    float: right;
+  }  
 }
 
 /*media queries 640px max */
 @media screen and (max-width: 640px) {
   
   nav {
-    margin-right: 100px;
-  }
-
-  .auth-image {
+    clear: both;
+    margin: 0;
+    padding: 0;
     float: none;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
+    width: 250px;
+    background-size: contain;
   }
 
-  #main-container {
-    max-height: 500px;
-    line-height: 20px;
+  .main-section {
+    align-content: center;
+  }
+
+  .work{
+    margin:20px 25px 25px;
+  }
+
+  .auth-image{
+    float:none;
   }
 }
